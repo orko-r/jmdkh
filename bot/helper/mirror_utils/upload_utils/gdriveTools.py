@@ -600,7 +600,7 @@ class GoogleDriveHelper:
         if not telegraph_content:
             return "", None
 
-        path = [telegraph.create_page(title='Jmdkh-mltb Drive Search', content=content)["path"] for content in telegraph_content]
+        path = [telegraph.create_page(title='Helix Authority Drive Search', content=content)["path"] for content in telegraph_content]
 
         if len(path) > 1:
             telegraph.edit_telegraph(path, telegraph_content)
