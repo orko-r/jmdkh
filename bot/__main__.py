@@ -54,19 +54,17 @@ def stats(update, context):
 
 def start(update, context):
     if config_dict['DM_MODE']:
-        start_string = '🎯 Hello Mates✌️.\n' \
-                       '🎯 Support us @NexusPrimeServer 🚀.\n' \
-                       '🎯 Type /{BotCommands.HelpCommand} to get a list of available commands.\n' \
-                       #Bot Started.\n' \
-                       'I will send your files or links here.\n'
+        start_string = f'''
+🎯 Hello Mates✌️.
+🎯 Support us @NexusPrimeServer 🚀.
+🎯 I will send your files or links here.
+'''
     else:
-        start_string = '🎯 Hello Mates✌️.\n' \
-                       '🎯 Support us @NexusPrimeServer 🚀.\n' \
-                       #Bot Started.\n' \
-                       'I will send your files or links here.\n'
-                       #'🌹 Welcome To One Of A Modified Anasty Mirror Bot\n' \
-                       #'This bot can Mirror all your links To Google Drive!\n' \
-                       #'👨🏽‍💻 Powered By: @JMDKH_Team'
+        start_string = f'''
+🎯 Hello Mates✌️.
+🎯 Support us @NexusPrimeServer 🚀.
+🎯 I will send your files or links here.
+'''
     sendMessage(start_string, context.bot, update.message)
 
 def restart(update, context):
